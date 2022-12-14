@@ -2,19 +2,19 @@ class BaseAnimale:
     def __init__(self, name, dayWeightEat, age):
         self.name = name
         self.dayWeightEat = dayWeightEat
-        self.__age = age
+        self._age = age
 
         self._type = ""
         self.biome = ""
         self.area = 0
-        self.foodTypes = []
-        self.__kogoest = ""
+        self._foodTypes = []
+        self._kogoest = ""
 
     def DoSound(self):
         print(self.name, ": Привет, я", self._type)
 
     def Eat(self, foodTypes):
-        if (foodTypes in self.foodTypes):
+        if (foodTypes in self._foodTypes):
             print(self.name, ": Спасибо, я покушал", foodTypes)
         else:
             print(self.name, ": Фу, я не ем", foodTypes)
@@ -30,7 +30,7 @@ class BaseAnimale:
     @Age.setter
     def Age(self, value):
         if value is int and value >= 0:
-            self.__age = value
+            self._age = value
         else:
             print("Так нельзя.")
 
@@ -41,6 +41,6 @@ class BaseAnimale:
     @KogoEst.setter
     def KogoEst(self, value):
         if value is str:
-            self.__kogoest = value
+            self._kogoest = value
         else:
             print("Так нельзя.")

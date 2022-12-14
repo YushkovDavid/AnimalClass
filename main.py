@@ -1,8 +1,8 @@
+from Elephant import *
+from Penguin import *
 from Giraffe import *
-name = "Виталя"
-dayWeightEat = 4
-age = 12
-g1 = Giraffe(name, dayWeightEat, age)
-print(g1.KogoEst)
+g1 = Penguin("Виталя", 4, 12)
+g1._foodTypes = "Мать"
+g1.Eat("Мать")
 
 
