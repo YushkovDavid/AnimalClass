@@ -6,7 +6,7 @@ class BaseAnimale:
 
         self._type = ""
         self.biome = ""
-        self.area = 0
+        self._square = 0
         self._foodTypes = []
         self._kogoest = ""
 
@@ -25,7 +25,7 @@ class BaseAnimale:
 
     @property
     def Age(self):
-        return self.__age
+        return self._age
 
     @Age.setter
     def Age(self, value):
@@ -36,7 +36,7 @@ class BaseAnimale:
 
     @property
     def KogoEst(self):
-        return self.__kogoest
+        return self._kogoest
 
     @KogoEst.setter
     def KogoEst(self, value):
