@@ -7,8 +7,6 @@ class BaseAnimale:
         self._type = ""
         self.biome = ""
         self._square = 0
-        self._foodTypes = []
-        self._kogoest = ""
 
     def DoSound(self):
         print(self.name, ": Привет, я", self._type)

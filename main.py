@@ -3,11 +3,13 @@ from Penguin import *
 from Giraffe import *
 from Valier import *
 
-g1 = Penguin("Виталя", 4, 12)
-g1._foodTypes = "Мать"
-g1.Eat("Мать")
+g1 = Giraffe("Виталя", 4, 12)
+g1._square = 5
+g2 = Giraffe("Виталя2", 4, 12)
+g2._square = 5
 
-V = Valier()
+V = Valier("QweQwe", "Тропики", 14)
 V.AddAnimal(g1)
-
+V.AddAnimal(g2)
+V.EatAnimals("Сено", 8)
 

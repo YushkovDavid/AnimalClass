@@ -6,7 +6,7 @@ class Penguin(BaseAnimale):
         self._type = "Пинвин"
         self.biome = ["Антарктида", "Южная Америка"]
         self.area = 15
-        self.foodTypes = ["Рыба", "Моллюски"]
+        self._foodTypes = ["Рыба", "Моллюски"]
         self._kogoest = "Хищник"
 
     def Play(self):

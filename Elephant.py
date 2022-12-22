@@ -6,8 +6,8 @@ class Elephant(BaseAnimale):
         self._type = "Слон"
         self.biome = "Тропики"
         self.area = 50
-        self.foodTypes = ["Сено", "Фрукты"]
-        self.__kogoest = "Веган"
+        self._foodTypes = ["Сено", "Фрукты"]
+        self._kogoest = "Веган"
 
     def Play(self):
         print(self.name, ": Давай расскажу анекдот")

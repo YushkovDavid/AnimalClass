@@ -6,7 +6,7 @@ class Giraffe(BaseAnimale):
         self._type = "Жираф"
         self.biome = "Тропики"
         self.area = 50
-        self.foodTypes = ["Сено", "Фрукты", "Листва"]
+        self._foodTypes = ["Сено", "Фрукты", "Листва"]
         self._kogoest = "Веган"
 
     def Play(self):
