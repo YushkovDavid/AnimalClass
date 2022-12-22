@@ -4,12 +4,12 @@ from Giraffe import *
 from Valier import *
 
 g1 = Giraffe("Виталя", 4, 12)
-g1._square = 5
-g2 = Giraffe("Виталя2", 4, 12)
-g2._square = 5
+g1._square = 10
 
-V = Valier("QweQwe", "Тропики", 14)
-V.AddAnimal(g1)
-V.AddAnimal(g2)
-V.EatAnimals("Сено", 8)
+V1 = Valier("QweQwe", "Тропики", 14)
+V1.AddAnimal(g1)
 
+for i in V1.listAnimals:
+    print(i.toString())
+
+print(V1.ZanyatayaSquare())
