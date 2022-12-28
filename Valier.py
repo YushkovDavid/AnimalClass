@@ -52,15 +52,18 @@ class Valier:
         self._Animals.remove(Animal)
 
     def EatAnimals(self, typeFood, mass):
+        EatTest = 0
         for i in self._Animals:
             if typeFood in i._foodTypes:
                 if mass >= i.dayWeightEat:
                     i.Eat(typeFood)
                     mass -= i.dayWeightEat
+                    EatTest += 1
                 else:
                     print(i.name, ":", "Мне не хватило еды покушать(")
             else:
                 print(i.name, ":", "Я такое не буду есть!")
+        return EatTest
 
     @property
     def listAnimals(self):
@@ -68,10 +71,15 @@ class Valier:
 
     @property
     def plase(self):
-        return self._square
+        return self._ValierSquare
 
     def ZanyatayaSquare(self):
         Sq = 0
         for i in self._Animals:
             Sq += i._square
         return Sq
+
+    @property
+    def AnimalsCount(self):
+        return "1"
+#        return len(self._Animals)
