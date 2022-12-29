@@ -3,7 +3,7 @@ class BaseAnimale:
         self.name = name
         self.dayWeightEat = dayWeightEat
         self._age = age
-
+        self._foodTypes = ""
         self._type = ""
         self.biome = ""
         self._square = 0
@@ -12,10 +12,13 @@ class BaseAnimale:
         print(self.name, ": Привет, я", self._type)
 
     def Eat(self, foodTypes):
+        tst = 0
         if (foodTypes in self._foodTypes):
             print(self.name, ": Спасибо, я покушал", foodTypes)
+            tst += 1
         else:
             print(self.name, ": Фу, я не ем", foodTypes)
+        return tst
 
     @property
     def Type(self):
